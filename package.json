@@ -1,7 +1,7 @@
 {
   "name": "pinboard",
   "version": "0.0.1",
-  "description": "A powerful and customizable server OS for self-hosting",
+  "description": "A powerful and customizable server OS for self-hosting.",
   "private": true,
   "scripts": {
     "dev": "next dev",
