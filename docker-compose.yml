@@ -14,7 +14,7 @@ services:
       PIN_MANAGER_IP: $PIN_MANAGER_IP
       PIN_MANAGER_PORT: $PIN_MANAGER_PORT
     volumes:
-      - ${PWD}/${PINBOARD_DATA_PATH}/nginx/templates:/etc/nginx/templates
+      - ${PWD}/system/nginx/templates:/etc/nginx/templates
       - ${PWD}/logs/nginx:/var/log/nginx
     networks:
       default:
@@ -22,7 +22,8 @@ services:
 
   pin-manager:
     container_name: pin-manager
-    image: ghcr.io/ohmypins/pin-manager:base
+    # image: ghcr.io/ohmypins/pin-manager:base
+    build: ../pin-manager
     restart: on-failure
     environment:
       PORT: $PIN_MANAGER_PORT
