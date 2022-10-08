@@ -1,7 +1,7 @@
-type: 'pin'
 key: 'pin-store'
 name: 'Pin Store'
-version: '0.0.1'
-# icon: ''
 description: 'A place to get your next awesome pin!'
+version: '0.0.1'
+type: 'pin'
+# icon: ''
 # container:
