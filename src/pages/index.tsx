@@ -1,3 +1,4 @@
+import Board from 'components/Board/Board';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
@@ -25,6 +26,8 @@ const Home: NextPage = () => {
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
         </div>
+        <hr></hr>
+        <Board></Board>
       </main>
     </div>
   );
