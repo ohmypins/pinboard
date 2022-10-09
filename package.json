@@ -13,6 +13,8 @@
     "@chakra-ui/react": "^2.3.5",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "@fontsource/dm-sans": "^4.5.9",
+    "@fontsource/poppins": "^4.5.10",
     "dockerode": "^3.3.4",
     "framer-motion": "^6",
     "js-yaml": "^4.1.0",

@@ -1,3 +1,6 @@
+import '@fontsource/poppins';
+// import '@fontsource/dm-sans';
+
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import type { AppProps } from 'next/app';
 
@@ -10,12 +13,19 @@ const colors = {
   },
 };
 
-const theme = extendTheme({ colors });
+const fonts = {
+  // heading: `'DM Sans', sans-serif`,
+  heading: `'Poppins', sans-serif`,
+  // body: `'DM Sans', sans-serif`,
+  body: `'Poppins', sans-serif`,
+};
+
+const theme = extendTheme({ colors, fonts });
 
 function Pinboard({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </ChakraProvider>
   );
 }
