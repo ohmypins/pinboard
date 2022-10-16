@@ -1,6 +1,6 @@
 import '@fontsource/dm-sans';
-
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import { AnimatePresence } from 'framer-motion';
 import type { AppProps } from 'next/app';
 
 // Extend the theme to include custom colors, fonts, etc
@@ -21,9 +21,11 @@ const theme = extendTheme({ colors, fonts });
 
 function Pinboard({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
+    <AnimatePresence exitBeforeEnter>
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </AnimatePresence>
   );
 }
 
